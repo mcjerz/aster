@@ -8,8 +8,11 @@ import { UsersComponent } from './components/users/users.component';
 import { UserListComponent } from './components/user-list/user-list.component';
 import { UserFormComponent } from './components/user-form/user-form.component';
 import {FormsModule} from "@angular/forms";
+import { ReactiveFormsModule } from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
 import {UserService} from "./service/user.service";
+import { ProductFormComponent } from './components/product-form/product-form.component';
+import { ProductListComponent } from './components/product-list/product-list.component';
 
 const components = [
   AppComponent,
@@ -23,12 +26,15 @@ const modules = [
   BrowserModule,
   AppRoutingModule,
   FormsModule,
-  HttpClientModule
+  HttpClientModule,
+  ReactiveFormsModule
 ]
 
 @NgModule({
   declarations: [
-    ...components
+    ...components,
+    ProductFormComponent,
+    ProductListComponent
   ],
   imports: [
     ...modules

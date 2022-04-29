@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin: 2em;
+  background: linear-gradient(to top, #CFF, #FCC) no-repeat;
+  background-size: cover;
+}
+body, button, * {
+  color: #112A46;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: large;
+  font-weight: bolder;
+}
+h1 {
+  color: #112A46;
+  font-family: 'Lobster', cursive;
+  font-size: 250%;
+}
+h2, h3 {
+  color: #112A46;
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: bolder;
+  font-size: 125%;
+}
+.btn-info {
+  background-color: #CFF;
+}

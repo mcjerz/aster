@@ -10,7 +10,6 @@ import java.util.List;
 
 
 @RestController
-@CrossOrigin(origins = "http://localhost:4200")
 public class ProductController {
     private ProductRepository productRepository;
 
@@ -19,7 +18,7 @@ public class ProductController {
         return productRepository.findAll();
     }
 
-    @PostMapping("/products")
+    @PostMapping("/addproduct")
     void addProduct(@RequestBody Product product) {
         productRepository.save(product);
     }

@@ -10,7 +10,7 @@ import java.util.List;
 
 
 @RestController
-@CrossOrigin(origins = "http://localhost:4200")
+
 public class UserController {
 
         private final UserRepository userRepository;
@@ -24,7 +24,7 @@ public class UserController {
             return userRepository.findAll();
         }
 
-        @PostMapping("/users")
+        @PostMapping("/adduser")
         void addUser(@RequestBody User user) {
             userRepository.save(user);
         }

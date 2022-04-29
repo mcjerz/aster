@@ -1,0 +1,13 @@
+<form [formGroup]="addProductForm" (ngSubmit)="onSubmit()">
+  <label for="product-name">Product Name: </label>
+  <input id="product-name" type="text" formControlName="productName">
+
+  <label for="product-price">Price: </label>
+  <input id="product-price" type="text" formControlName="productPrice">
+
+  <label for="product-description">Description: </label>
+  <input id="product-description" type="text" formControlName="productDescription">
+
+  <p>Complete the form to enable button.</p>
+  <button type="submit" [disabled]="!addProductForm.valid">Submit</button>
+</form>
